@@ -68,6 +68,7 @@ function drawUser() {
 }
 //
 //move user
+//
 function moveUser(e) {
   switch (e.key) {
     case "ArrowLeft":
