@@ -10,6 +10,7 @@ const ballStart = [230, 40];
 let ballCurrentPosition = ballStart;
 //
 //Create Block
+//
 class Block {
   constructor(xAxis, yAxis) {
     this.bottomLeft = [xAxis, yAxis];
