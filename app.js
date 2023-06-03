@@ -18,7 +18,9 @@ class Block {
     this.topRight = [xAxis + blockWidth, yAxis];
   }
 }
+//
 //all my blocks
+//
 const blocks = [
   new Block(10, 270),
   new Block(120, 270),
@@ -84,5 +86,5 @@ document.addEventListener("keydown", moveUser);
 //
 //add ball
 const ball = document.createElement("div");
-ball.classList.add("ball"); 
+ball.classList.add("ball");
 grid.appendChild(ball);
