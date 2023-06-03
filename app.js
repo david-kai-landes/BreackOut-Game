@@ -18,7 +18,6 @@ class Block {
     this.topRight = [xAxis + blockWidth, yAxis];
   }
 }
-//
 //all my blocks
 const blocks = [
   new Block(10, 270),
