@@ -40,6 +40,8 @@ const blocks = [
   new Block(450, 210),
 ];
 //
+//
+//
 // Draw all my Blocks
 function addBlocks() {
   for (let i = 0; i < blocks.length; i++) {
