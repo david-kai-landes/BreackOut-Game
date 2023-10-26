@@ -10,6 +10,7 @@ const ballStart = [230, 40];
 let ballCurrentPosition = ballStart;
 //
 //Create Block
+//
 class Block {
   constructor(xAxis, yAxis) {
     this.bottomLeft = [xAxis, yAxis];
@@ -20,6 +21,7 @@ class Block {
 }
 //
 //all my blocks
+//
 const blocks = [
   new Block(10, 270),
   new Block(120, 270),
@@ -53,18 +55,21 @@ function addBlocks() {
 addBlocks();
 //
 //add user
+//
 const user = document.createElement("div");
 user.classList.add("user");
 drawUser();
 grid.appendChild(user);
 //
 // Draw User
+//
 function drawUser() {
   user.style.left = currentPosition[0] + "px";
   user.style.bottom = currentPosition[1] + "px";
 }
 //
 //move user
+//
 function moveUser(e) {
   switch (e.key) {
     case "ArrowLeft":
@@ -86,5 +91,5 @@ document.addEventListener("keydown", moveUser);
 //
 //add ball
 const ball = document.createElement("div");
-ball.classList.add("ball"); 
+ball.classList.add("ball");
 grid.appendChild(ball);
